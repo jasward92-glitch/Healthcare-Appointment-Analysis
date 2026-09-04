@@ -1,10 +1,8 @@
 # Healthcare Appointment Analysis
 
-## Project Overview
-
 This project analyzes 100 healthcare appointments to identify patterns in patient wait times, satisfaction, appointment outcomes, provider performance, and billing.
 
-The goal of this project was to use Excel to transform raw healthcare appointment data into actionable insights through data cleaning, PivotTables, analysis, and dashboard visualization.
+The goal of this project was to transform raw healthcare appointment data into actionable insights through data cleaning, validation, descriptive analysis, Excel PivotTables, dashboard development, and Power BI visualization.
 
 ## Business Questions
 
@@ -20,9 +18,11 @@ This analysis focused on the following questions:
 ## Tools Used
 
 - Microsoft Excel
+- Microsoft Power BI
 - PivotTables
 - PivotCharts
 - Excel dashboards
+- Power BI dashboards
 - Data cleaning and validation
 - Descriptive analysis
 
@@ -56,14 +56,14 @@ Key fields include:
 | Total Appointments | 100 |
 | Completion Rate | 94% |
 | Average Wait Time | 34.47 minutes |
-| Average Satisfaction | 3.81 / 5 |
+| Average Satisfaction | 3.82 / 5 |
 | Average Billing | $290.95 |
 
 ## Key Findings
 
 ### Wait Time and Satisfaction
 
-Department-level analysis showed a relationship between longer wait times and lower patient satisfaction.
+Department-level analysis showed an association between longer wait times and lower patient satisfaction.
 
 - Orthopedics had the longest average wait time at **57.4 minutes** and an average satisfaction score of **2.5**.
 - Cardiology had an average wait time of **56.3 minutes** and satisfaction of **2.6**.
@@ -91,7 +91,7 @@ Provider analysis compared average wait time, patient satisfaction, billing, and
 
 Dr. Carter had the highest average satisfaction score at **4.35** across 28 appointments and an average wait time of approximately **22.5 minutes**.
 
-Dr. Patel and Dr. Williams had the longest average wait times, while also showing lower average satisfaction scores.
+Dr. Patel and Dr. Williams had the longest average wait times while also showing lower average satisfaction scores.
 
 Average billing varied by provider, with Dr. Williams having the highest average billing amount at approximately **$458.50** and Dr. Carter having the lowest at approximately **$185.30**.
 
@@ -117,7 +117,7 @@ Based on the analysis, the following areas could be investigated further:
 2. **Evaluate New Patient scheduling** because this appointment type had the highest average wait time.
 3. **Review Follow-Up scheduling capacity** because Follow-Up appointments represented the largest appointment category and also had relatively long waits.
 4. **Monitor wait time and satisfaction together** to determine whether improvements in patient flow are associated with improved patient experience.
-5. **Review high-performing practices in Pediatrics** to identify scheduling or workflow practices that may be useful in other departments.
+5. **Review practices in Pediatrics** to identify scheduling or workflow practices that may be useful in other departments.
 
 ## Data Quality
 
@@ -127,29 +127,37 @@ Six satisfaction scores were blank because the corresponding appointments were c
 
 Appointment counts were also validated across the major PivotTables and reconciled to the dataset total of 100 appointments.
 
-## Dashboard
+## Excel Dashboard
 
-The Excel dashboard summarizes the analysis through KPI cards and visualizations covering:
+The Excel analysis included KPI summaries and visualizations covering appointment volume, completion rate, wait time, satisfaction, billing, appointment status, and department-level performance.
 
-- Total appointments
-- Completion rate
-- Average wait time
-- Average satisfaction
-- Average billing
-- Average wait time by department
-- Satisfaction and wait time by department
-- Average satisfaction by department
-- Appointment status
+The Excel workbook contains the cleaned dataset, analysis worksheets, PivotTables, and dashboard.
+
+## Power BI Dashboard
+
+The Power BI dashboard was created to provide a simplified interactive view of the healthcare operations analysis.
+
+The dashboard includes:
+
+- **Total Appointments:** 100
+- **Completion Rate:** 94%
+- **Average Satisfaction:** 3.82 / 5
+- **Appointments by Department**
+- **Average Wait Time by Department**
+- **Department slicer for interactive filtering**
+
+The dashboard allows users to filter the department and evaluate appointment volume, wait time, and satisfaction at a high level.
 
 ## Repository Contents
 
-- `Healthcare_Appointment_Analysis.xlsx` cleaned dataset, analysis worksheets, PivotTables, and dashboard
-- `README.md`  project documentation and analytical findings
+- `Healthcare_Appointment_Analysis.xlsx` — cleaned dataset, analysis worksheets, PivotTables, and Excel dashboard
+- `Healthcare_Appointment_Analysis.pbix` — Power BI dashboard and visualization
+- `README.md` — project documentation, analytical findings, and recommendations
 
 ## Conclusion
 
-This project demonstrates the use of Excel to clean, analyze, visualize, and communicate healthcare appointment data.
+This project demonstrates the use of Excel and Power BI to clean, analyze, visualize, and communicate healthcare appointment data.
 
-The analysis identified meaningful differences in wait times and satisfaction across departments, appointment types, and providers. The strongest opportunity for further investigation is improving patient flow in areas with longer wait times and lower satisfaction.
+The analysis identified meaningful differences in wait times and satisfaction across departments and appointment types. The strongest opportunity for further investigation is improving patient flow in areas with longer wait times and lower satisfaction.
 
 This project reflects a practical approach to healthcare data analysis by connecting operational metrics to patient experience and business decision-making.
